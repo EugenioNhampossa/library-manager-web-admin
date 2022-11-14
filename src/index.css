@@ -1,0 +1,79 @@
+:root {
+    --bluePrimary: #2185d0;
+    --blueSecondary: #1e384b;
+}
+
+.ui.clearing.segment.titleBar {
+background-image: linear-gradient(to right, #2185d0, #7c9fdc, #b1bce7, #dcdcf3, #ffffff);;
+}
+
+
+.ui.mini.right.floated.button.titleBarButton{
+    background-color: transparent;
+    color: #000;
+}
+
+#sideMenulg.ui.secondary.vertical.pointing.menu{
+    border-right-width: 0;
+    padding: 0;
+}
+#side.ui.segment {
+    padding: 5px;
+    padding-top: 15px;
+    overflow-x: scroll;
+}
+
+.ui.secondary.vertical.pointing.menu .active.item{
+    border-left: solid;
+    border-right: none;
+    color: #2185D0
+}
+
+.ui.vertical.menu .item .menu a.item {
+    font-size:medium;
+}
+
+.ui.vertical.menu .item .menu .link.item:hover,
+.ui.vertical.menu .item .menu a.item:hover {
+    border-left: solid;
+    color: #2185D0;
+    transition: 0.15s;
+}
+
+.infoItem{
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+
+#side{
+    background-color: var(--blueSecondary);
+}
+
+#topMenu{
+    background-color: var(--blueSecondary);
+}
+
+#footer{
+    background-color: var(--blueSecondary);
+}
+#userDrop{
+    background-color: var(--blueSecondary);
+}
+
+#infoLivro.ui.segment.clearing.inverted{
+    background-image: linear-gradient(to left bottom, #a5673f, #bb8768, #cfa893, #e1cbbf);
+}
+
+
+#infoMembro.ui.segment.clearing.inverted {
+    background-image: linear-gradient(to left bottom, #db2828, #ec635c, #f5938e, #f6c0bf);
+}
+
+#infoFunc.ui.segment.clearing.inverted {
+    background-image: linear-gradient(to left bottom, #00b5ad, #62c6d8, #a7d6f1, #dde8fa);
+}
+
+
+
