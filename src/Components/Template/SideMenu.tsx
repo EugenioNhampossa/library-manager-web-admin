@@ -58,6 +58,44 @@ export class SideMenu extends Component {
                   onClick={this.handleItemClick}
                 />
               </Link>
+            </Menu.Menu>
+            <Menu.Menu>
+              <Link to="/autores">
+                <Menu.Item
+                  link
+                  name="autores"
+                  active={activeItem === "autores"}
+                  onClick={this.handleItemClick}
+                />
+              </Link>
+            </Menu.Menu>
+            <Menu.Menu>
+              <Link to="/editoras">
+                <Menu.Item
+                  link
+                  name="editoras"
+                  active={activeItem === "editoras"}
+                  onClick={this.handleItemClick}
+                />
+              </Link>
+            </Menu.Menu>
+             <Menu.Menu>
+              <Link to="/categorias">
+                <Menu.Item
+                  link
+                  name="categorias"
+                  active={activeItem === "categorias"}
+                  onClick={this.handleItemClick}
+                />
+              </Link>
+            </Menu.Menu>
+          </Menu.Item>
+          <Menu.Item>
+            <Menu.Header>
+              <Icon name="handshake" />
+              Operações
+            </Menu.Header>
+            <Menu.Menu>
               <Link to="/emprestimos">
                 <Menu.Item
                   link
@@ -66,6 +104,26 @@ export class SideMenu extends Component {
                   onClick={this.handleItemClick}
                 >
                   Empréstimos
+                </Menu.Item>
+              </Link>
+              <Link to="/Multas">
+                <Menu.Item
+                  link
+                  name="multas"
+                  active={activeItem === "multas"}
+                  onClick={this.handleItemClick}
+                >
+                  Multas
+                </Menu.Item>
+              </Link>
+               <Link to="/equisicoes">
+                <Menu.Item
+                  link
+                  name="aquisicoes"
+                  active={activeItem === "aquisicoes"}
+                  onClick={this.handleItemClick}
+                >
+                  Aquisiçãoes
                 </Menu.Item>
               </Link>
             </Menu.Menu>
@@ -87,7 +145,7 @@ export class SideMenu extends Component {
               </Link>
             </Menu.Menu>
           </Menu.Item>
-          {sessionStorage.getItem("permissao") &&
+          {true &&<>
             <Menu.Item>
               <Menu.Header>
                 <Icon name="users" />
@@ -116,6 +174,25 @@ export class SideMenu extends Component {
                 </Link>
               </Menu.Menu>
             </Menu.Item>
+             <Menu.Item>
+              <Menu.Header>
+                <Icon name="user circle" />
+                Usuários
+              </Menu.Header>
+              <Menu.Menu>
+                <Link to="/usuarios">
+                  <Menu.Item
+                    link
+                    name="usuarios"
+                    active={activeItem === "usuarios"}
+                    onClick={this.handleItemClick}
+                  >
+                    Usuarios
+                  </Menu.Item>
+                </Link>
+              </Menu.Menu>
+            </Menu.Item>
+            </>
           }
         </Menu>
       </Segment>

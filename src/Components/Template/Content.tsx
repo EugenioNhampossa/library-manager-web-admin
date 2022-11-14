@@ -13,7 +13,7 @@ import { LivrosInfo } from "../Pages/Livros/LivrosInfo";
 import { MembroForm } from "../Pages/Membros/MembroForm";
 import { MembroInfo } from "../Pages/Membros/MembroInfo";
 import { Membros } from "../Pages/Membros/Membros";
-import { NotFound } from "../Pages/NotFound";
+import { NotFound } from "../Pages/NotFound/NotFound";
 import style from "./Estrutura.module.css";
 
 export function Content() {
